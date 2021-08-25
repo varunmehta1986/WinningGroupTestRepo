@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WinningGroupProductsAPI.DataManager;
+﻿using Microsoft.AspNetCore.Mvc;
 using WinningGroupProductsAPI.DataManager.Interfaces;
 
 namespace WinningGroupProductsAPI.Controllers

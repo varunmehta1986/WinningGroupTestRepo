@@ -168,7 +168,7 @@ namespace WinningGroupProductsAPI.Controllers.Tests
 				},
 				new Product()
 				{
-					ProductId = 3
+					ProductId = 3,
 					Sku = "370-04-2497",
 					Name = "Test Name 3",
 					Attribute = new Models.Attribute()
