@@ -13,9 +13,9 @@ There are 4 APIs that are a part of this solution -
       - Example : https://localhost:49153/api/products/price/100.10/200.20
 
 3. To get the products based on Fantastic attribute.
-      - Route : https://localhost:49153/api/products/fantastic/{isFantastic}
+      - Route : /api/products/fantastic/{isFantastic}
       - Example : https://localhost:49153/api/products/fantastic/true
  
 4. To get the products based on minimum and maximum rating
-      - Route : https://localhost:49153/api/products/rating/{minimum}/{maximum}
+      - Route : /api/products/rating/{minimum}/{maximum}
       - Example : https://localhost:49153/api/products/rating/1.2/2.6
