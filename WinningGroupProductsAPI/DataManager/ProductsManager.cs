@@ -26,16 +26,28 @@ namespace WinningGroupProductsAPI.DataManager
 			return result.Result;
 		}
 
-		public IList<Product> FilterByPrice(decimal price)
+		/// <summary>
+		/// Method to filter products by price
+		/// </summary>
+		/// <param name="minimum"></param>
+		/// <param name="maximum"></param>
+		/// <returns></returns>
+		public IList<Product> FilterByPrice(double minimum, double maximum)
 		{
-			throw new NotImplementedException();
+			return _productsCollection.Find(prod => prod.Price >= minimum && prod.Price <= maximum)
+									.ToListAsync().Result;
 		}
-
-		public IList<Product> FilterByRating(bool ratingValue)
+		/// <summary>
+		/// Method to filter products by ratings 
+		/// </summary>
+		/// <param name="minimum"></param>
+		/// <param name="maximum"></param>
+		/// <returns></returns>
+		public IList<Product> FilterByRating(double minimum, double maximum)
 		{
-			throw new NotImplementedException();
+			return _productsCollection.Find(prod => prod.Attribute.Rating.Value >= minimum && prod.Attribute.Rating.Value <= maximum)
+									.ToListAsync().Result;
 		}
-
 		/// <summary>
 		/// Method to get all the products in the collection
 		/// </summary>

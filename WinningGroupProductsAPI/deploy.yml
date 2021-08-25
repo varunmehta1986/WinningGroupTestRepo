@@ -1,0 +1,24 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: winning-group-test-kubectl
+  namespace: winning-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app:  winning-group-test-pod
+  template:
+    metadata:
+      labels:
+        app: winning-group-test-pod
+    spec:
+      containers:
+      - name: winning-group-test-container
+        image: winninggroupproductsapi:dev
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000

@@ -9,7 +9,7 @@ namespace WinningGroupProductsAPI.Models
 		[BsonElement("type")]
 		public short Type { get; set; }
 		[BsonElement("value")]
-		public float Value { get; set; }
+		public double Value { get; set; }
 		
 	}
 }
