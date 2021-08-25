@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: winning-group-test-container
-        image: winninggroupproductsapi:dev
+        image: varunmehta1986/winningroupproductapi
         resources:
           limits:
             memory: "128Mi"
