@@ -1,6 +1,6 @@
 # Winnings group test 
 
-As of right now all the requirements have been implented and we can run the app with IIS Express or with Docker. Having issues with running with Kubernetes. I have attached the screenshot of the PS results down below. 
+As of right now all the requirements have been implented and we can run the app with IIS Express or with Docker. Having issues with running with Kubernetes. Unable to access the service apis. 
 
 There are 4 APIs that are a part of this solution - 
 
@@ -20,6 +20,6 @@ There are 4 APIs that are a part of this solution -
       - Route : /api/products/rating/{minimum}/{maximum}
       - Example : https://localhost:49153/api/products/rating/1.2/2.6
 
-Kubernetes issue SS- 
-![image](https://user-images.githubusercontent.com/23556964/130762318-5e42983a-fbde-4f7b-8aab-d7fed5e2e8f6.png)
+Kubernetes running pods - 
+![image](https://user-images.githubusercontent.com/23556964/130810491-3fba4bf3-91d0-4dde-8a85-2543aec2cf70.png)
 
