@@ -1,0 +1,11 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: winning-group-service
+spec:
+  selector:
+    app: winning-group-test-pod
+  ports:
+    - port: 8080
+      targetPort: 80
+  type: LoadBalancer
